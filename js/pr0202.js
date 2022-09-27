@@ -1,0 +1,10 @@
+let totalKilos,totalImporte;
+let precioManzanas = num(prompt("¿Cual es el precio de las manzanas?"));
+let cantidadManzanas = num(prompt("¿Cuantas manzanas quieres?"));
+let precioNaranjas = num(prompt("¿Cual es el precio de las naranjas?"));
+let cantidadNaranjas = num(prompt("¿Cuantas naranjas quieres?"));
+let precioPlatanos = num(prompt("¿Cual es el precio de las platanos?"));
+let cantidadPlatanos = num(prompt("¿Cuantas platanos quieres?"));
+totalKilos = cantidadManzanas + cantidadNaranjas + cantidadPlatanos;
+totalImporte = precioManzanas + precioNaranjas + precioPlatanos; 
+alert("Has comprado un total de " +  totalKilos + " kilos de fruta y te ha costado " + totalImporte + " euros");
