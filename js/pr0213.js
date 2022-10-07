@@ -1,21 +1,16 @@
 let numeroPrimo = function(numero) {
-    let esPrimo = true;
-    for(let i = 2; i < numero; i++){
+    for(let i = 2; i < numero**(1/2); i++){
         if(numero % i == 0){
-            esPrimo = false;
             return false;            
         }
-    }
-    if(esPrimo){
-        return true;        
     }
     
 };
 
-function primerosNumerosPrimos(numeroTope,functionPrimo){
+function primerosNumerosPrimos(numeroTope){
     let mensaje = `Los números primos hasta ${numeroTope} son: `;
     for(let i = 2;i <= numeroTope; i++){
-        if(functionPrimo(i)){
+        if(numeroPrimo(i)){
             mensaje += `, ${i}`;
         }
     }
@@ -24,7 +19,7 @@ function primerosNumerosPrimos(numeroTope,functionPrimo){
 
 let numeroActual = Number(prompt("Introduce un número:"))
 
-primerosNumerosPrimos(numeroActual,numeroPrimo);
+primerosNumerosPrimos(numeroActual);
 
 
 

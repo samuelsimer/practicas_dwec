@@ -1,16 +1,11 @@
 let numeroPrimo = function(numero) {
-    let esPrimo = true;
-    for(let i = 2; i < numero; i++){
+    for(let i = 2; i < numero**(1/2); i++){
         if(numero % i == 0){
-            esPrimo = false;
-            alert("NO ES PRIMO");
             return false;            
         }
     }
-    if(esPrimo){
-        alert("ES PRIMO");
-        return true;        
-    }
+    return true;        
+
     
 };
 
@@ -19,6 +14,6 @@ while(true){
     if(numeroActual == 0){
         break;
     }
-    numeroPrimo(numeroActual);
+    numeroPrimo(numeroActual) ? alert("Es primo") : alert("No es primo");
     
 }
