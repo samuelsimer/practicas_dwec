@@ -1,9 +1,8 @@
 function containsObject(obj1, obj2){
     let resultado = true;
-    for (let key in obj1){
-        if(key in obj2 == false){
+    for (let key in obj2){
+        if(key in obj1 == false){
             resultado = false;
-            break;
         }
          
     }

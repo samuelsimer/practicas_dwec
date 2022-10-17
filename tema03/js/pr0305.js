@@ -3,8 +3,7 @@ function removeUndefined(obj1){
     for (let key in obj1){
         if(obj1[key] != undefined){
             objetoClonado[key] = obj1[key];
-        }
-         
+        }  
     }
     return objetoClonado;
 }
