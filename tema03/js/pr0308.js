@@ -1,8 +1,9 @@
 function countLetters(str) {
-    str = str.toLowerCase();
+    str = str.toLowerCase()
+        .replaceAll(" ", "");
     var objeto = {}; 
-    for(var i in str){
-        objeto[str[i]] = ( objeto[str[i]] || 0 ) + 1; // Incrementamos el valor si el elemento ya existe
+    for(let i of str){
+        objeto[i] = ( objeto[i] || 0 ) + 1; // Incrementamos el valor si el elemento ya existe
     }
     return objeto;
 }
