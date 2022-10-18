@@ -8,4 +8,4 @@ function countLetters(str) {
     return objeto;
 }
 
-console.log(countLetters("kjhskdasaaaaa"));
+console.log(countLetters("kjhsk dasa    aaaa"));
