@@ -1,8 +1,8 @@
 function removeVowels(str){
     vowels = "aeiouAEIOU";
-    let texto = str.split("");
-    let textoSinVocales = texto.filter(item => !vowels.includes(item, vowels));
-    textoSinVocales = textoSinVocales.join("");
+    let textoSinVocales = str.split("")
+                            .filter(item => !vowels.includes(item, vowels))
+                            .join("");
     
     return textoSinVocales;
 }
