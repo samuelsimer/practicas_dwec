@@ -1,10 +1,8 @@
 function max( arr ){
-    acum = 0;
-    let maximo = arr.reduce((acum, item) => {
+    return arr.reduce((acum, item) => {
         if(acum < item) acum = item;
         return acum;
-    });
-    return maximo;
+    }, 0);
 }
 
 let numeros = [1, 4, 10, 20, 15, 23, 8, 14];
