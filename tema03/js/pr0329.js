@@ -1,12 +1,17 @@
-function addNif(array){    
-    array.forEach((item) => {
-        let letraDni = (item.dni%23) + 9;
-        letraDni = letraDni.toString(36).toUpperCase();//transformo el resto con base 36 a letra
-        let nif = item.dni + letraDni;        
-        console.log(letraDni.toString(36));
-        delete item.dni;
-        item['nif'] = nif;
+function getAverages(array){
+    return array.map((item) => {
+        let notas = item['notas'];
+        console.log(notas);
+        let media = 0;
+        for ( let key in notas ){
+            media += notas[key];
+        }
+        media = media / 3;
+        return "alumno: " + item.nombre + " " + item.ape1 + " " + item.ape2 +
+            ", expediente: " + item.expediente +
+            " nota_media: " + media;
     });
+        
 }
 
 let arr = [
@@ -38,6 +43,6 @@ let arr = [
             DWES: 4
         }
     }
-]
-addNif(arr)
-console.log(arr);
+    ]
+    
+    console.log(getAverages(arr));

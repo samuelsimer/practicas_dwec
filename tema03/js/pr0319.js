@@ -1,7 +1,6 @@
 function max( arr ){
     return arr.reduce((acum, item) => {
-        if(acum < item) acum = item;
-        return acum;
+        return (acum < item) ? item : acum;
     }, 0);
 }
 

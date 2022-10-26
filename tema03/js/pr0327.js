@@ -1,12 +1,9 @@
-function addNif(array){    
-    array.forEach((item) => {
-        let letraDni = (item.dni%23) + 9;
-        letraDni = letraDni.toString(36).toUpperCase();//transformo el resto con base 36 a letra
-        let nif = item.dni + letraDni;        
-        console.log(letraDni.toString(36));
-        delete item.dni;
-        item['nif'] = nif;
-    });
+function getNumberOfAlumnos( array, str ){
+    return array.reduce((acum, item) => {
+        if(item.ciclo == str){
+            return ++ acum;
+        }
+    }, 0);
 }
 
 let arr = [
@@ -39,5 +36,5 @@ let arr = [
         }
     }
 ]
-addNif(arr)
-console.log(arr);
+
+console.log(getNumberOfAlumnos(arr, 'DAW'));
