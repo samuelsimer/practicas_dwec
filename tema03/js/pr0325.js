@@ -1,8 +1,7 @@
 function getAverageGrade(arr, modulo){
     let notaMedia = 0;
     arr.forEach(item => {
-        let notas = item['notas'];
-        notaMedia += notas[modulo];        
+        notaMedia = item.notas[modulo];       
     });
     notaMedia = notaMedia/arr.length;
     return notaMedia;

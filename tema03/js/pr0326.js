@@ -1,9 +1,8 @@
 function getAlumnosByCiclo(str, array){
-    return array.map((item) => {
-        if(item.ciclo == str){
+    return array.filter(item => item.ciclo == str)
+        .map((item) => {
             return item.nombre + " " + item.ape1 + " " + item.ape2;
-        }
-    });
+        });
 }
 
 let arr = [
@@ -28,7 +27,7 @@ let arr = [
         dni: '7340831',
         expediente: '342',
         pass: 'P@ssw0rd',
-        ciclo: 'DAW',
+        ciclo: 'DAM',
         notas: {
             DWEC: 8,
             DIW: 5.2,

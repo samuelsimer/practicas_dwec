@@ -1,7 +1,6 @@
 function getUsernames(array){
-    return array.map((item) => {
-        return item['nombre'].toLowerCase() + item['ape1'].substr(-1).toLowerCase() + item['ape2'].substr(-1).toLowerCase();
-    });
+    return array.map((item) =>  item['nombre'].toLowerCase() + item['ape1'].substr(-1).toLowerCase() + item['ape2'].substr(-1).toLowerCase()
+    );
 }
 
 let arr = [

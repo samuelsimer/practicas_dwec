@@ -1,11 +1,9 @@
 function addNif(array){    
     array.forEach((item) => {
-        let letraDni = (item.dni%23) + 9;
-        letraDni = letraDni.toString(36).toUpperCase();//transformo el resto con base 36 a letra
-        let nif = item.dni + letraDni;        
-        console.log(letraDni.toString(36));
+        //let letras = array("T","R","W","A","G","M","Y","F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E");
+        let letras = Array.from("TRWAGMYFPDXBNJZSQVHLCKE");        
         delete item.dni;
-        item['nif'] = nif;
+        item['nif'] = letras[item.dni%23];
     });
 }
 
