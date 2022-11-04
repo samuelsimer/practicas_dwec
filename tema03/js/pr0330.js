@@ -10,7 +10,7 @@ function getUnsecurePass(array){
                 return item;
         }
     });
-    return inseguros.map(item => item.nombre + " " + item.ape1 + " " + item.ape2);
+    return inseguros.map(item => `${item.nombre} ${item.ape1} ${item.ape2}`);
 }
 
 let arr = [
