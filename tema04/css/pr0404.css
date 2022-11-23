@@ -1,0 +1,22 @@
+.titulos{
+    background-color: rgb(184, 189, 193);
+    border-collapse: collapse ;
+    
+}
+
+.negras{
+    background-color: black;
+}
+table{
+    border-collapse: collapse ;
+}
+
+td{
+    height: 80px;
+    width: 80px;
+}
+
+th{
+    height: 80px;
+    width: 80px;
+}
