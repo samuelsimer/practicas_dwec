@@ -1,0 +1,19 @@
+.pulsado{
+    background-color: rgba(146, 242, 245, 0.807);
+}
+
+td{
+    border: solid;
+    border-collapse: collapse;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.pulsado{
+    background-color: rgb(253, 172, 73);
+}
+
+.pulsadoDerecho{
+    background-color: rgb(253, 73, 73);
+}

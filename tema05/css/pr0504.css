@@ -1,0 +1,17 @@
+.pulsado{
+    background-color: rgba(146, 242, 245, 0.807);
+}
+
+td{
+    border: solid;
+    border-collapse: collapse;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.contador{
+    font-size: 50px;
+    background-color: aqua;
+    text-align: center;
+}

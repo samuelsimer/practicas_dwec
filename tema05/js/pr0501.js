@@ -1,8 +1,7 @@
 let lista = document.querySelector('ul');
 
-console.log(lista);
-
 lista.addEventListener('click', cambiarClase);
+lista.onmousedown = function() {return false;}
 
 function cambiarClase(e){
     
@@ -10,10 +9,12 @@ function cambiarClase(e){
         if(!e.ctrlKey){
             resetearClases();
         }
-        e.target.classList.add('pulsado')
+        e.target.classList.toggle('pulsado')
     }else{
         if(!e.ctrlKey){
             resetearClases();
+        }else{
+            e.target.classList.toggle('pulsado')
         }
     }
 }
